@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="fonts/fonts.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>НМК</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+          <a class="navbar-brand" href="./index.html"><img src="img/logo.png" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle z_index1" href="#" id="navbarDropdown" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Меню
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="./index.html">Главная страница</a></li>
+                  <li><a class="dropdown-item" href="./profile.html">Мой профиль</a></li>
+                  <li><a class="dropdown-item" href="./card.html">Карточка товара</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="./page.html">Доставка</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./order.html">Оплата</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./booking.html">Бронь товара</a>
+              </li>
+            </ul>
+            <div class="menu-right d-flex">
+              <div class="menu-contact">
+                <a href="tel:+79850378233">
+                  <img src="img/phone.svg" alt="">
+                  <span>+7(985) 037-82-33</span>
+                </a>
+              </div>
+              <div class="menu-user">
+                <button class="profile" data-bs-toggle="modal" data-bs-target="#login">
+                  <img src="img/person.svg" alt="">
+                </button>
+                <a href="./basket.html" class="cart">
+                  <img src="img/shopping-cart.svg" alt="">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section class="basket">
+      <div class="container">
+        <div class="basket-top">
+          <div class="basket-elements">
+            <h1>Корзина</h1>
+            <div class="basket-info">
+              <div class="order-item">
+                <div class="cart-product-item">
+                  <div class="cart-product-left d-flex">
+                    <div class="btic"><img src="img/close-icon.svg" alt=""></div>
+                    <div class="cart-product-img">
+
+                    </div>
+                    <div class="cart-product-name">СГУЩЕННЫЕ БЕРЕГА</div>
+                  </div>
+                  <div class="cart-product-right d-flex">
+                    <div class="input_range">
+                      <span class="min button">-</span>
+                      <input type="text" name="qty" id="qty" maxlength="12" />
+                      <span class="plus button">+</span>
+                    </div>
+                    <div class="cart-product-price">
+                      125 Р
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="basket-sidebar">
+            <div class="title">Заказ №47561</div>
+            <div class="price">
+              <span>Товар в корзине</span> <b>125 ₽</b>
+            </div>
+            <div class="price">
+              <span>Скидка</span> <b>10 ₽</b>
+            </div>
+            <div class="to_pay_basket">
+              <span>Итого к оплате</span>
+              <b>115 ₽</b>
+            </div>
+            <div class="pay-block">
+              <button class="pay-popup">Оформить заказ</button>
+            </div>
+          </div>
+        </div>
+        <div class="basket-bottom">
+          <div class="basket-sidebar">
+            <div class="price-left">
+              <div class="price">
+                <span>Итого</span>
+              </div>
+              <div class="price">
+                <span>Доставка</span>
+              </div>
+            </div>
+            <div class="price-center">
+              <div class="price">
+                <b>115 ₽</b>
+              </div>
+              <div class="price">
+                <b>100 ₽</b>
+              </div>
+            </div>
+            <div class="price-right">
+              <div class="price">
+                <span>Итого к оплате</span>
+              </div>
+              <div class="price">
+                <b>215 ₽</b>
+              </div>
+            </div>
+          </div>
+          <div class="basket-elements">
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="delivery">
+      <div class="container">
+        <div class="block">
+          <h4 class="title">Доставка по области от 1999 RUB!</h4>
+          <a href="./page.html">Оформить</a>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="footer-wrapper">
+          <div class="footer-left">
+            <div class="phones">
+              <div class="phone-item">
+                <span>Бесплатный звонок по РФ</span>
+                <a href="tel:+7832826000">+7 (831) 282-60-00</a>
+              </div>
+              <div class="phone-item">
+                <span>Для приёма заказов</span>
+                <a href="tel:+79040664685">+7 (904) 066-46-85</a>
+              </div>
+            </div>
+            <div class="work-time">
+              График работы по будням с 9:00 до 18:00
+            </div>
+            <div class="work-email">
+              <a href="mailto: info@.ru">Email: info@.ru</a>
+              <a href="" class="site-help">Поддержка</a>
+            </div>
+          </div>
+          <div class="footer-center">
+            <div class="social">
+              <a href="">Мы в контакте ></a>
+              <a href="">Мы в instagram ></a>
+            </div>
+          </div>
+          <div class="footer-right">
+            <div class="person">
+              <a href=""><img src="img/footerperson.svg" alt=""> <span>Войти / Регистрация</span></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer_bottom">
+          <span>©2021. Нижнекисляйская молочная фабрика</span>
+          <a href="">Условия исоглашения</a>
+          <a href="">Политика кофиденциальности</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
+  </script>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+  <script>
+    const mySwiper = new Swiper('.swiper-container', {
+      slidesPerView: 1,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
+    const menuSwiper = new Swiper('.swiper-container-menu', {
+      slidesPerView: 'auto',
+      spaceBetween: 63,
+      freeMode: true,
+
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+    jQuery(function () {
+      var j = jQuery; //Just a variable for using jQuery without conflicts
+      var addInput = '#qty'; //This is the id of the input you are changing
+      var n = 1; //n is equal to 1
+
+      //Set default value to n (n = 1)
+      j(addInput).val(n + 'шт.');
+
+      //On click add 1 to n
+      j('.plus').on('click', function () {
+        j(addInput).val(++n + 'шт.');
+      })
+
+      j('.min').on('click', function () {
+        //If n is bigger or equal to 1 subtract 1 from n
+        if (n >= 1) {
+          j(addInput).val(--n + 'шт.');
+        } else {
+          //Otherwise do nothing
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>
+<!-- Modal -->
+<div class="modal fade" id="login" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      <div class="modal-body">
+        <div class="top-modal">
+          <img src="img/loginssv.svg" alt="">
+          <div class="modal-name">Войти в личный кабинет</div>
+        </div>
+        <div class="form">
+          <form action="" method="post">
+            <div class="inpb">
+              <input class="phone" name="" type="text" placeholder="Телефон">
+            </div>
+            <div class="inpb">
+              <input class="pass" name="" type="text" placeholder="Пароль">
+            </div>
+            <div class="forgot_pass">Забыли пароль?</div>
+            <button><a href="profile.html">Войти</a></button>
+          </form>
+          <div class="modal-txt">Впервые у нас <span class="span_register" data-bs-toggle="modal"
+              data-bs-target="#register">Зарегистрироваться</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal register -->
+<div class="modal fade" id="register" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      <div class="modal-body">
+        <div class="top-modal">
+          <img src="img/loginssv.svg" alt="">
+          <div class="modal-name">Регистрация</div>
+        </div>
+        <div class="form">
+          <form action="" method="post">
+            <div class="inpb">
+              <input class="phone" name="" type="text" placeholder="Телефон">
+            </div>
+            <div class="inpb">
+              <input class="pass" name="" type="text" placeholder="Пароль">
+            </div>
+            <div class="inpb">
+              <input class="pass_repit" name="" type="text" placeholder="Подтвердите пароль">
+            </div>
+            <div class="line">
+              <input type="checkbox" id="r-mail">
+              <label for="r-mail">Принимаю условия <span>Пользовательского соглашения, Политики
+                  конфиденциальности</span></label>
+            </div>
+            <button><a href="profile.html">Зарегистрироваться</a></button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

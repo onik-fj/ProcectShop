@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="fonts/fonts.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>НМК</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+          <a class="navbar-brand" href="./index.html"><img src="img/logo.png" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle z_index1" href="#" id="navbarDropdown" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Меню
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="./index.html">Главная страница</a></li>
+                  <li><a class="dropdown-item" href="./profile.html">Мой профиль</a></li>
+                  <li><a class="dropdown-item" href="./card.html">Карточка товара</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="./page.html">Доставка</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./order.html">Оплата</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./booking.html">Бронь товара</a>
+              </li>
+            </ul>
+            <div class="menu-right d-flex">
+              <div class="menu-contact">
+                <a href="tel:+79850378233">
+                  <img src="img/phone.svg" alt="">
+                  <span>+7(985) 037-82-33</span>
+                </a>
+              </div>
+              <div class="menu-user">
+                <button class="profile" data-bs-toggle="modal" data-bs-target="#login">
+                  <img src="img/person.svg" alt="">
+                </button>
+                <a href="./basket.html" class="cart">
+                  <img src="img/shopping-cart.svg" alt="">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    
+    <section class="cart-product cart-product-order profile">
+      <div class="container">
+        <div class="line-block-buttons">
+          <button class="tab-b-1 active">
+            <svg width="42" height="38" viewBox="0 0 42 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M38.63 0.854736H3.24352C1.74257 0.854736 0.521484 2.07583 0.521484 3.57677V28.0751C0.521484 29.5761 1.74257 30.7972 3.24352 30.7972H17.8745V33.4341C17.8745 33.8099 18.1792 34.1146 18.555 34.1146C18.9308 34.1146 19.2355 33.8099 19.2355 33.4341V30.9673H22.638V33.4341C22.638 33.8099 22.9427 34.1146 23.3186 34.1146C23.6944 34.1146 23.9991 33.8099 23.9991 33.4341V30.7972H38.63C40.131 30.7972 41.3521 29.5761 41.3521 28.0751V3.57677C41.3521 2.07591 40.131 0.854736 38.63 0.854736ZM39.991 28.0751C39.991 28.8255 39.3804 29.4361 38.63 29.4361H3.24352C2.49309 29.4361 1.8825 28.8255 1.8825 28.0751V3.57677C1.8825 2.82634 2.49309 2.21576 3.24352 2.21576H38.63C39.3804 2.21576 39.991 2.82634 39.991 3.57677V28.0751ZM31.1137 37.2941C31.0023 37.6523 30.6214 37.8534 30.2617 37.7417C24.542 35.9621 17.2948 35.9738 11.6118 37.7417C11.2529 37.8532 10.8715 37.653 10.7598 37.2941C10.6481 36.9351 10.8486 36.5538 11.2074 36.4421C17.1553 34.5917 24.6848 34.5812 30.6661 36.4421C31.025 36.5538 31.2253 36.9352 31.1137 37.2941ZM28.0317 13.5516C27.9118 12.4513 26.9869 11.6217 25.8802 11.6217H25.0367V10.0459C25.0367 7.76633 23.1821 5.91177 20.9026 5.91177C18.623 5.91177 16.7686 7.76625 16.7686 10.0458V11.6216H15.9252C14.8184 11.6216 13.8935 12.4513 13.7736 13.5515L12.7154 23.2726C12.576 24.5525 13.5802 25.6711 14.8669 25.6711H26.9385C28.226 25.6711 29.2293 24.5517 29.09 23.2726L28.0317 13.5516ZM26.9385 24.3101H14.8669C14.3878 24.3101 14.0165 23.8956 14.0684 23.4199L15.1267 13.6989C15.1711 13.2905 15.5145 12.9826 15.9252 12.9826H16.7686V14.3281C16.7686 14.704 17.0733 15.0087 17.4492 15.0087C17.825 15.0087 18.1297 14.704 18.1297 14.3281V10.0457C18.1297 8.51659 19.3736 7.27262 20.9027 7.27262C22.4318 7.27262 23.6757 8.51659 23.6757 10.0457V11.6215H20.1421C19.7663 11.6215 19.4616 11.9262 19.4616 12.302C19.4616 12.6778 19.7663 12.9825 20.1421 12.9825H23.6757V14.3281C23.6757 14.7039 23.9804 15.0086 24.3562 15.0086C24.7321 15.0086 25.0368 14.7039 25.0368 14.3281V12.9825H25.8802C26.2909 12.9825 26.6343 13.2905 26.6787 13.6988L27.737 23.4198C27.7889 23.896 27.417 24.3101 26.9385 24.3101Z" fill="white"/>
+              </svg>                                       
+            <span>Личные данные</span>
+          </button>
+          <button class="tab-b-2">
+            <svg width="38" height="42" viewBox="0 0 38 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M37.8345 32.7504L36.6441 21.8155C36.4935 20.4317 35.3301 19.3882 33.938 19.3882H33.0708V17.3981C33.0708 14.769 30.9318 12.6301 28.3028 12.6301C25.6737 12.6301 23.5348 14.7691 23.5348 17.3981V19.3881H22.6676C21.2756 19.3881 20.1122 20.4317 19.9615 21.8155L18.771 32.7504C18.5958 34.3601 19.8588 35.767 21.4771 35.767H35.1286C36.7451 35.7671 38.01 34.3622 37.8345 32.7504ZM35.1286 34.4061H21.4772C20.6654 34.4061 20.0363 33.7036 20.1242 32.8978L21.3146 21.9629C21.39 21.271 21.9717 20.7492 22.6676 20.7492H23.5348V22.4667C23.5348 22.8425 23.8395 23.1472 24.2153 23.1472C24.5911 23.1472 24.8958 22.8425 24.8958 22.4667V17.3982C24.8958 15.5196 26.4242 13.9912 28.3029 13.9912C30.1815 13.9912 31.7099 15.5196 31.7099 17.3982V19.3882H27.4026C27.0268 19.3882 26.7221 19.6929 26.7221 20.0687C26.7221 20.4445 27.0268 20.7492 27.4026 20.7492H31.7099V22.4667C31.7099 22.8425 32.0146 23.1472 32.3904 23.1472C32.7662 23.1472 33.0709 22.8425 33.0709 22.4667V20.7492H33.9381C34.6342 20.7492 35.2158 21.271 35.2911 21.9629L36.4816 32.8977C36.5695 33.7047 35.9394 34.4061 35.1286 34.4061ZM30.6847 38.3189C30.3088 38.3189 30.0042 38.6236 30.0042 38.9994C30.0042 39.7499 29.3936 40.3604 28.6432 40.3604H2.95441C2.20399 40.3604 1.59342 39.7499 1.59342 38.9994V3.6136C1.59342 2.86318 2.20399 2.2526 2.95441 2.2526H22.0934V7.44139C22.0934 8.94231 23.3144 10.1634 24.8154 10.1634H30.6847C31.2896 10.1634 31.5934 9.42921 31.1658 9.00169C22.6467 0.482546 23.1982 0.962552 22.907 0.904795C22.813 0.886166 23.8968 0.89161 2.95441 0.89161C1.45349 0.89161 0.232422 2.11268 0.232422 3.6136V38.9994C0.232422 40.5004 1.45349 41.7214 2.95441 41.7214H28.6432C30.1441 41.7214 31.3652 40.5004 31.3652 38.9994C31.3652 38.6235 31.0605 38.3189 30.6847 38.3189ZM24.8154 8.80239C24.065 8.80239 23.4544 8.19181 23.4544 7.44139V3.21491L29.0418 8.80239H24.8154ZM11.0451 10.9293C11.0473 9.79931 10.1337 8.88379 9.0036 8.88379H7.63019C6.50456 8.88379 5.5887 9.79957 5.5887 10.9253V12.2935C5.5887 13.4192 6.50456 14.335 7.63019 14.335H9.00096C10.1245 14.335 11.0404 13.4209 11.0425 12.2974L11.0451 10.9293ZM9.68146 12.2949C9.68078 12.6694 9.37549 12.974 9.00096 12.974H7.63019C7.25498 12.974 6.94969 12.6687 6.94969 12.2935V10.9253C6.94969 10.5501 7.25498 10.2448 7.63019 10.2448H9.0036C9.38034 10.2448 9.68478 10.5499 9.6841 10.9266L9.68146 12.2949ZM11.0353 21.1364C11.0353 20.0107 10.1194 19.0949 8.99382 19.0949H7.63282C6.5072 19.0949 5.59133 20.0107 5.59133 21.1364V22.4974C5.59133 23.6231 6.5072 24.5389 7.63282 24.5389H8.99382C10.1194 24.5389 11.0353 23.6231 11.0353 22.4974V21.1364ZM9.67432 22.4974C9.67432 22.8726 9.36903 23.1779 8.99382 23.1779H7.63282C7.25762 23.1779 6.95233 22.8726 6.95233 22.4974V21.1364C6.95233 20.7612 7.25762 20.4559 7.63282 20.4559H8.99382C9.36903 20.4559 9.67432 20.7612 9.67432 21.1364V22.4974ZM8.99382 29.3024H7.63282C6.5072 29.3024 5.59133 30.2181 5.59133 31.3438V32.7048C5.59133 33.8306 6.5072 34.7463 7.63282 34.7463H8.99382C10.1194 34.7463 11.0353 33.8306 11.0353 32.7048V31.3438C11.0353 30.2181 10.1194 29.3024 8.99382 29.3024ZM9.67432 32.7048C9.67432 33.08 9.36903 33.3853 8.99382 33.3853H7.63282C7.25762 33.3853 6.95233 33.08 6.95233 32.7048V31.3438C6.95233 30.9686 7.25762 30.6633 7.63282 30.6633H8.99382C9.36903 30.6633 9.67432 30.9686 9.67432 31.3438V32.7048ZM19.0416 12.2899H14.3632C13.9874 12.2899 13.6827 11.9852 13.6827 11.6094C13.6827 11.2336 13.9874 10.9289 14.3632 10.9289H19.0416C19.4174 10.9289 19.7221 11.2336 19.7221 11.6094C19.7221 11.9852 19.4174 12.2899 19.0416 12.2899ZM17.0852 22.4974H14.3632C13.9874 22.4974 13.6827 22.1927 13.6827 21.8169C13.6827 21.4411 13.9874 21.1364 14.3632 21.1364H17.0852C17.461 21.1364 17.7657 21.4411 17.7657 21.8169C17.7657 22.1927 17.461 22.4974 17.0852 22.4974ZM16.0644 31.3438C16.4402 31.3438 16.7449 31.6485 16.7449 32.0243C16.7449 32.4001 16.4402 32.7048 16.0644 32.7048H14.3632C13.9874 32.7048 13.6827 32.4001 13.6827 32.0243C13.6827 31.6485 13.9874 31.3438 14.3632 31.3438H16.0644Z" fill="#00AC4E"/>
+              </svg>              
+            <span>История заказов</span></button>
+        </div>
+        <div class="line-tab line-tab-1 active">
+          <form action="">
+            <div class="cart-wrapper">
+              <div class="cart-info">
+                <h3>Персональная информация</h3>
+                <div class="photo-input">
+                  <div class="photo"></div>
+                  <input type="file" id="file">
+                  <label for="file">Загрузить фотографию</label>
+                </div>
+                <div class="form-line">
+                  <div class="group-block">
+                    <div class="group-line g-name">
+                      <div class="label">Ваше имя</div>
+                      <input type="text" placeholder="Имя" name="">
+                    </div>
+                    <div class="group-line g-surname">
+                      <div class="label">Ваша фамилия</div>
+                      <input type="text" placeholder="Фамилия" name="">
+                    </div>
+                  </div>
+                </div>
+                <div class="form-line g-father">
+                  <div class="label">Ваше отчество</div>
+                  <input type="text" placeholder="Отчество" name="">
+                </div>
+                <div class="form-line">
+                  <div class="label">Адрес электронной почты</div>
+                  <input type="text" placeholder="Email" name="">
+                </div>
+              </div>
+              <div class="cart-sidebar">
+                <h3>Контактная информация
+                  <span>(подтверждение заказов)</span>
+                </h3>
+                <div class="form-line">
+                  <div class="group-block">
+                    <div class="group-line">
+                      <div class="label">Основной телефон</div>
+                      <input type="text" placeholder="+7980" name="">
+                    </div>
+                    <div class="group-line">
+                      <div class="label">Дополнительный</div>
+                      <input type="text" placeholder="+7980" name="">
+                    </div>
+                  </div>
+                </div>
+                <h3>Изменение пароля</h3>
+                <div class="form-line">
+                  <div class="label">Ваш старый пароль</div>
+                  <input type="text" placeholder="Старый пароль" name="">
+                </div>
+                <div class="form-line">
+                  <div class="label">Ваш старый пароль</div>
+                  <input type="text" placeholder="Ваш новый пароль" name="">
+                </div>
+                <div class="form-line">
+                  <div class="label">Подтверждение</div>
+                  <input type="text" placeholder="Старый пароль" name="">
+                </div>
+                <button>Сохранить изменения</button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="line-tab line-tab-2">
+          <div class="block-order">
+            <div class="order-info">
+              <div class="line">
+                <b>Номер заказа:</b> <span class="green">Заказ №2334678954</span>
+              </div>
+              <div class="line">
+                <b>Способ оплаты:</b> <span>Банковская карта</span>
+              </div>
+              <div class="line">
+                <b>Дата заказа:</b> <span>19.05.2021</span>
+              </div>
+              <div class="line">
+                <b>Дата доставки:</b> <span>23.05.2021</span>
+              </div>
+              <div class="line">
+                <b>Статус заказа:</b> <span class="green">Доставлен</span>
+              </div>
+            </div>
+            <div class="order-item">
+              <div class="cart-product-item">
+                <div class="cart-product-left d-flex">
+                  <div class="cart-product-img">
+
+                  </div>
+                  <div class="cart-product-name">МОЛОКО "СГУЩЕННЫЕ БЕРЕГА"</div>
+                </div>
+                <div class="cart-product-right d-flex">
+                  <div class="count">
+                    1шт.
+                  </div>
+                  <div class="cart-product-price">
+                    115Р
+                  </div>
+                </div>
+              </div>
+              <div class="cart-product-item">
+                <div class="cart-product-left d-flex">
+                  <div class="cart-product-img">
+
+                  </div>
+                  <div class="cart-product-name">СЛИВКИ "СГУЩЕННЫЕ БЕРЕГА"</div>
+                </div>
+                <div class="cart-product-right d-flex">
+                  <div class="count">
+                    1шт.
+                  </div>
+                  <div class="cart-product-price">
+                    116Р
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="delivery">
+      <div class="container">
+        <div class="block">
+          <h4 class="title">Доставка по области от 1999 RUB!</h4>
+          <a href="./page.html">Оформить</a>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="footer-wrapper">
+          <div class="footer-left">
+            <div class="phones">
+              <div class="phone-item">
+                <span>Бесплатный звонок по РФ</span>
+                <a href="tel:+7832826000">+7 (831) 282-60-00</a>
+              </div>
+              <div class="phone-item">
+                <span>Для приёма заказов</span>
+                <a href="tel:+79040664685">+7 (904) 066-46-85</a>
+              </div>
+            </div>
+            <div class="work-time">
+              График работы по будням с 9:00 до 18:00
+            </div>
+            <div class="work-email">
+              <a href="mailto: info@.ru">Email: info@.ru</a>
+              <a href="" class="site-help">Поддержка</a>
+            </div>
+          </div>
+          <div class="footer-center">
+            <div class="social">
+              <a href="">Мы в контакте ></a>
+              <a href="">Мы в instagram ></a>
+            </div>
+          </div>
+          <div class="footer-right">
+            <div class="person">
+              <a href=""><img src="img/footerperson.svg" alt=""> <span>Войти / Регистрация</span></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer_bottom">
+          <span>©2021. Нижнекисляйская молочная фабрика</span>
+          <a href="">Условия исоглашения</a>
+          <a href="">Политика кофиденциальности</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
+  </script>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+  <script>
+      jQuery('.line-block-buttons .tab-b-1').on('click', function(){
+        jQuery('.line-block-buttons button').removeClass('active');
+        jQuery(this).addClass('active');
+        jQuery('.line-tab-1').addClass('active');
+        jQuery('.line-tab-2').removeClass('active');
+      });
+      jQuery('.line-block-buttons .tab-b-2').on('click', function(){
+        jQuery('.line-block-buttons button').removeClass('active');
+        jQuery(this).addClass('active');
+        jQuery('.line-tab-2').addClass('active');
+        jQuery('.line-tab-1').removeClass('active');
+      });
+  </script>
+</body>
+
+</html>
+<!-- Modal -->
+<div class="modal fade" id="login" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      <div class="modal-body">
+        <div class="top-modal">
+          <img src="img/loginssv.svg" alt="">
+          <div class="modal-name">Войти в личный кабинет</div>
+        </div>
+        <div class="form">
+          <form action="" method="post">
+            <div class="inpb">
+              <input class="phone" name="" type="text" placeholder="Телефон">
+            </div>
+            <div class="inpb">
+              <input class="pass" name="" type="text" placeholder="Пароль">
+            </div>
+            <div class="forgot_pass">Забыли пароль?</div>
+            <button><a href="profile.html">Войти</a></button>
+          </form>
+          <div class="modal-txt">Впервые у нас <span class="span_register" data-bs-toggle="modal" data-bs-target="#register">Зарегистрироваться</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal register -->
+<div class="modal fade" id="register" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      <div class="modal-body">
+        <div class="top-modal">
+          <img src="img/loginssv.svg" alt="">
+          <div class="modal-name">Регистрация</div>
+        </div>
+        <div class="form">
+          <form action="" method="post">
+            <div class="inpb">
+              <input class="phone" name="" type="text" placeholder="Телефон">
+            </div>
+            <div class="inpb">
+              <input class="pass" name="" type="text" placeholder="Пароль">
+            </div>
+            <div class="inpb">
+              <input class="pass_repit" name="" type="text" placeholder="Подтвердите пароль">
+            </div>
+            <div class="line">
+              <input type="checkbox" id="r-mail">
+              <label for="r-mail">Принимаю условия <span>Пользовательского соглашения, Политики конфиденциальности</span></label>
+            </div>
+            <button><a href="profile.html">Зарегистрироваться</a></button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

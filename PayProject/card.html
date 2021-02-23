@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="fonts/fonts.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>НМК</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+          <a class="navbar-brand" href="./index.html"><img src="img/logo.png" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle z_index1" href="#" id="navbarDropdown" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Меню
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="./index.html">Главная страница</a></li>
+                  <li><a class="dropdown-item" href="./profile.html">Мой профиль</a></li>
+                  <li><a class="dropdown-item" href="./basket.html">Корзина</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="./page.html">Доставка</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./order.html">Оплата</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./booking.html">Бронь товара</a>
+              </li>
+            </ul>
+            <div class="menu-right d-flex">
+              <div class="menu-contact">
+                <a href="tel:+79850378233">
+                  <img src="img/phone.svg" alt="">
+                  <span>+7(985) 037-82-33</span>
+                </a>
+              </div>
+              <div class="menu-user">
+                <button class="profile" data-bs-toggle="modal" data-bs-target="#login">
+                  <img src="img/person.svg" alt="">
+                </button>
+                <a href="./basket.html" class="cart">
+                  <img src="img/shopping-cart.svg" alt="">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section class="card">
+      <div class="container">
+        <div class="card-top">
+          <div class="card-img">
+            <img src="img/cardImg.jpg" alt="">
+          </div>
+          <div class="card-sidebar">
+            <div class="title">СГУЩЕННЫЕ БЕРЕГА</div>
+            <div class="price">
+              <span>Цена</span> <b>125 ₽</b>
+            </div>
+            <div class="price">
+              <span>Цена по акции</span> <b>115 ₽</b>
+            </div>
+            <div class="price">
+              <span>Количество</span>
+              <div class="input_range" data-desc="Ед. изм.: упаковка">
+                <span class="min button">-</span>
+                <input type="text" name="qty" id="qty" maxlength="12" />
+                <span class="plus button">+</span>
+              </div>
+            </div>
+            <div class="to_pay">
+              <span>Итого к оплате</span>
+              <b>115 ₽</b>
+            </div>
+            <div class="pay-block">
+              <button class="pay-popup">Купить</button>
+              <button class="cart-add"></button>
+            </div>
+          </div>
+        </div>
+        <div class="card-bottom">
+          <div class="card-info">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button"
+                  role="tab" aria-controls="home" aria-selected="true">О товаре</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button"
+                  role="tab" aria-controls="profile" aria-selected="false">Параметры</button>
+              </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+              <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                <h2 class="tab"><b>Описание</b></h2>
+                <p>Молоко цельное сгущенное с сахаром вареное "Сгущенные Берега"</p>
+                <p>Масса нетто: 370 г.</p>
+                <p>Срок реализации: 8 месяцев</p>
+                <p>Массовая доля жира: 8,5%</p>
+                <p>Емкость тары: 45 шт  </p>
+              </div>
+              <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                <ul class="product_ul">
+                  <li><b>Калории:</b> 420</li>
+                  <li><b>Жиры:</b> 54</li>
+                  <li><b>Белки:</b> 27</li>
+                  <li><b>Углеводы:</b> 18</li>
+                  <li><b>Масса:</b> 500 грамм</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="delivery">
+      <div class="container">
+        <div class="block">
+          <h4 class="title">Доставка по области от 1999 RUB!</h4>
+          <a href="./page.html">Оформить</a>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="footer-wrapper">
+          <div class="footer-left">
+            <div class="phones">
+              <div class="phone-item">
+                <span>Бесплатный звонок по РФ</span>
+                <a href="tel:+7832826000">+7 (831) 282-60-00</a>
+              </div>
+              <div class="phone-item">
+                <span>Для приёма заказов</span>
+                <a href="tel:+79040664685">+7 (904) 066-46-85</a>
+              </div>
+            </div>
+            <div class="work-time">
+              График работы по будням с 9:00 до 18:00
+            </div>
+            <div class="work-email">
+              <a href="mailto: info@.ru">Email: info@.ru</a>
+              <a href="" class="site-help">Поддержка</a>
+            </div>
+          </div>
+          <div class="footer-center">
+            <div class="social">
+              <a href="">Мы в контакте ></a>
+              <a href="">Мы в instagram ></a>
+            </div>
+          </div>
+          <div class="footer-right">
+            <div class="person">
+              <a href=""><img src="img/footerperson.svg" alt=""> <span>Войти / Регистрация</span></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer_bottom">
+          <span>©2021. Нижнекисляйская молочная фабрика</span>
+          <a href="">Условия исоглашения</a>
+          <a href="">Политика кофиденциальности</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
+  </script>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+  <script>
+    const mySwiper = new Swiper('.swiper-container', {
+      slidesPerView: 1,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
+    const menuSwiper = new Swiper('.swiper-container-menu', {
+      slidesPerView: 'auto',
+      spaceBetween: 63,
+      freeMode: true,
+
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+    jQuery(function () {
+      var j = jQuery; //Just a variable for using jQuery without conflicts
+      var addInput = '#qty'; //This is the id of the input you are changing
+      var n = 1; //n is equal to 1
+
+      //Set default value to n (n = 1)
+      j(addInput).val(n + 'шт.');
+
+      //On click add 1 to n
+      j('.plus').on('click', function () {
+        j(addInput).val(++n + 'шт.');
+      })
+
+      j('.min').on('click', function () {
+        //If n is bigger or equal to 1 subtract 1 from n
+        if (n >= 1) {
+          j(addInput).val(--n + 'шт.');
+        } else {
+          //Otherwise do nothing
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>
+<!-- Modal -->
+<div class="modal fade" id="login" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      <div class="modal-body">
+        <div class="top-modal">
+          <img src="img/loginssv.svg" alt="">
+          <div class="modal-name">Войти в личный кабинет</div>
+        </div>
+        <div class="form">
+          <form action="" method="post">
+            <div class="inpb">
+              <input class="phone" name="" type="text" placeholder="Телефон">
+            </div>
+            <div class="inpb">
+              <input class="pass" name="" type="text" placeholder="Пароль">
+            </div>
+            <div class="forgot_pass">Забыли пароль?</div>
+            <button><a href="profile.html">Войти</a></button>
+          </form>
+          <div class="modal-txt">Впервые у нас <span class="span_register" data-bs-toggle="modal"
+              data-bs-target="#register">Зарегистрироваться</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal register -->
+<div class="modal fade" id="register" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      <div class="modal-body">
+        <div class="top-modal">
+          <img src="img/loginssv.svg" alt="">
+          <div class="modal-name">Регистрация</div>
+        </div>
+        <div class="form">
+          <form action="" method="post">
+            <div class="inpb">
+              <input class="phone" name="" type="text" placeholder="Телефон">
+            </div>
+            <div class="inpb">
+              <input class="pass" name="" type="text" placeholder="Пароль">
+            </div>
+            <div class="inpb">
+              <input class="pass_repit" name="" type="text" placeholder="Подтвердите пароль">
+            </div>
+            <div class="line">
+              <input type="checkbox" id="r-mail">
+              <label for="r-mail">Принимаю условия <span>Пользовательского соглашения, Политики
+                  конфиденциальности</span></label>
+            </div>
+            <button><a href="profile.html">Зарегистрироваться</a></button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

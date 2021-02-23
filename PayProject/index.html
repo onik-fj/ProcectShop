@@ -1,0 +1,474 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="fonts/fonts.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>НМК</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+          <a class="navbar-brand" href="./index.html"><img src="img/logo.png" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle z_index1" href="#" id="navbarDropdown" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Меню
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="./index.html">Главная страница</a></li>
+                  <li><a class="dropdown-item" href="./profile.html">Мой профиль</a></li>
+                  <li><a class="dropdown-item" href="./card.html">Карточка товара</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="./page.html">Доставка</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./order.html">Оплата</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./booking.html">Бронь товара</a>
+              </li>
+            </ul>
+            <div class="menu-right d-flex">
+              <div class="menu-contact">
+                <a href="tel:+79850378233">
+                  <img src="img/phone.svg" alt="">
+                  <span>+7(985) 037-82-33</span>
+                </a>
+              </div>
+              <div class="menu-user">
+                <button class="profile" data-bs-toggle="modal" data-bs-target="#login">
+                  <img src="img/person.svg" alt="">
+                </button>
+                <a href="./basket.html" class="cart">
+                  <img src="img/shopping-cart.svg" alt="">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section class="home-banner">
+      <div class="container">
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide block">
+              <img src="img/Sale.jpg" alt="">
+              <h2>Подарок на первый заказ</h2>
+              <p>Получите 500 рублей за подписку на рассылку</p>
+              <a href="">Подписаться</a>
+            </div>
+            <div class="swiper-slide block">
+              <img src="img/Sale.jpg" alt="">
+              <h2>Акция</h2>
+              <p>Подписшись на рассылку и получите 500 рублей за покупку от 1500 рублей</p>
+              <a href="">Подписаться</a>
+            </div>
+            <div class="swiper-slide block">
+              <img src="img/Sale.jpg" alt="">
+              <h2>Акция</h2>
+              <p>Подписшись на рассылку и получите 1500 рублей за покупку от 5000 рублей</p>
+              <a href="">Подписаться</a>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+    <!-- <section class="home-menu">
+      <div class="container">
+        <div class="swiper-container-menu">
+          <div class="swiper-wrapper">
+            <a href="" class="swiper-slide active">
+              <span>Что-то</span>
+            </a>
+            <a href="" class="swiper-slide">
+              <span>Что-то</span>
+            </a>
+            <a href="" class="swiper-slide">
+              <span>Что-то</span>
+            </a>
+            <a href="" class="swiper-slide">
+              <span>Что-то</span>
+            </a>
+            <a href="" class="swiper-slide">
+              <span>Что-то</span>
+            </a>
+            <a href="" class="swiper-slide">
+              <span>Что-то</span>
+            </a>
+            <a href="" class="swiper-slide">
+              <span>Что-то</span>
+            </a>
+            <a href="" class="swiper-slide">
+              <span>Что-то</span>
+            </a>
+            <a href="" class="swiper-slide">
+              <span>Что-то</span>
+            </a>
+            <a href="" class="swiper-slide">
+              <span>Что-то</span>
+            </a>
+            <a href="" class="swiper-slide">
+              <span>Что-то</span>
+            </a>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
+    </section> -->
+    <section class="home-products">
+      <div class="container">
+        <h3 class="all_products">Все товары</h3>
+        <div class="products-wrapper">
+          <div class="product">
+            <div class="cartP-top">
+              <a href="card.html">
+                <div class="img">
+                  <img src="img/mcsss4.jpg" alt="">
+                </div>
+                <a href="./card.html" class="title">МОЛОКО ЦЕЛЬНОЕ СГУЩЕННОЕ С САХАРОМ ВАРЕНОЕ "СГУЩЕННЫЕ БЕРЕГА"</a>
+                <p class="description"></p>
+              </a>
+            </div>                     
+            <div class="cartP-bottom">
+              <div class="price">
+                <b>125₽/шт</b> <span>За 115₽.</span>
+                <a href="./basket.html" class="to-cart">В корзину</a>
+              </div>                 
+            </div>                       
+          </div>
+          <div class="product">
+            <div class="cartP-top">
+              <a href="card.html">
+                <div class="img">
+                  <img src="img/sgush.jpg" alt="">
+                </div>
+                <a href="./card.html" class="title">МОЛОКО ЦЕЛЬНОЕ СГУЩЕННОЕ С САХАРОМ "СГУЩЕННЫЕ БЕРЕГА"</a>
+                <p class="description"></p>
+              </a>
+            </div>                     
+            <div class="cartP-bottom">
+              <div class="price">
+                <b>80₽/шт</b> <span>За 70₽.</span>
+                <a href="./basket.html" class="to-cart">В корзину</a>
+              </div>                   
+            </div>                       
+          </div>
+          <div class="product">
+            <div class="cartP-top">
+              <a href="card.html">
+                <div class="img">
+                  <img src="img/mcsss.jpg" alt="">
+                </div>
+                <a href="./card.html" class="title">МОЛОКО ЦЕЛЬНОЕ СГУЩЕННОЕ С САХАРОМ ВАРЕНОЕ "СГУЩЕННЫЕ БЕРЕГА"</a>
+                <p class="description"></p>
+              </a>
+            </div>                     
+            <div class="cartP-bottom">
+              <div class="price">
+                <b>100 ₽/шт</b> <span>За 90₽.</span>
+                <a href="./basket.html" class="to-cart">В корзину</a>
+              </div>                   
+            </div>                       
+          </div>
+          <div class="product">
+            <div class="cartP-top">
+              <a href="card.html">
+                <div class="img">
+                  <img src="img/smcsss.jpg" alt="">
+                </div>
+                <a href="./card.html" class="title">МОЛОКО ЦЕЛЬНОЕ СГУЩЕННОЕ С САХАРОМ "СГУЩЕННЫЕ БЕРЕГА"</a>
+                <p class="description"></p>
+              </a>
+            </div>                     
+            <div class="cartP-bottom">
+              <div class="price">
+                <b>60₽/шт</b> <span>За 50₽.</span>
+                <a href="./basket.html" class="to-cart">В корзину</a>
+              </div>                 
+            </div>                       
+          </div>
+          <div class="product">
+            <div class="cartP-top">
+              <a href="card.html">
+                <div class="img">
+                  <img src="img/mcsss3.jpg" alt="">
+                </div>
+                <a href="./card.html" class="title">ПРОДУКТ МОЛОКОСОДЕРЖАЩИЙ СГУЩЕННЫЙ С САХАРОМ "ВАРЕНКА" "СГУЩЕННЫЕ БЕРЕГА"</a>
+                <p class="description"></p>
+              </a>
+            </div>                     
+            <div class="cartP-bottom">
+              <div class="price">
+                <b>110₽/шт</b> <span>За 105₽.</span>
+                <a href="./basket.html" class="to-cart">В корзину</a>
+              </div>                  
+            </div>                       
+          </div>
+          <div class="product">
+            <div class="cartP-top">
+              <a href="card.html">
+                <div class="img">
+                  <img src="img/mcsss2.jpg" alt="">
+                </div>
+                <a href="./card.html" class="title">СЛИВКИ СГУЩЕННЫЕ С САХАРОМ "СГУЩЕННЫЕ БЕРЕГА"</a>
+                <p class="description"></p>
+              </a>
+            </div>                     
+            <div class="cartP-bottom">
+              <div class="price">
+                <b>128₽/шт</b> <span>За 116₽.</span>
+                <a href="./basket.html" class="to-cart">В корзину</a>
+              </div>                 
+            </div>                       
+          </div>
+          <div class="product">
+            <div class="cartP-top">
+              <a href="card.html">
+                <div class="img">
+                  <img src="img/mcsss5.jpg" alt="">
+                </div>
+                <a href="./card.html" class="title">ПРОДУКТ СГУЩЕННЫЙ С САХАРОМ "СГУЩЕНОЧКА"</a>
+                <p class="description"></p>
+              </a>
+            </div>                     
+            <div class="cartP-bottom">
+              <div class="price">
+                <b>130₽/шт</b> <span>За 126₽.</span>
+                <a href="./basket.html" class="to-cart">В корзину</a>
+              </div>                
+            </div>                       
+          </div>
+          <div class="product">
+            <div class="cartP-top">
+              <a href="card.html">
+                <div class="img">
+                  <img src="img/mcsss6.jpg" alt="">
+                </div>
+                <a href="./card.html" class="title">МОЛОКО СГУЩЕННОЕ С САХАРОМ И КОФЕ</a>
+                <p class="description"></p>
+              </a>
+            </div>                     
+            <div class="cartP-bottom">
+              <div class="price">
+                <b>70₽/шт</b> <span>За 68₽.</span>
+                <a href="./basket.html" class="to-cart">В корзину</a>
+              </div>               
+            </div>                       
+          </div>
+          <div class="product">
+            <div class="cartP-top">
+              <a href="card.html">
+                <div class="img">
+                  <img src="img/mcsss7.jpg" alt="">
+                </div>
+                <a href="./card.html" class="title">ПРОДУКТ МОЛОЧНЫЙ ТОПЛЕНЫЙ СГУЩЕННЫЙ С САХАРОМ "ВАРЕНКА ВОЛОГОДСКАЯ"</a>
+                <p class="description"></p>
+              </a>
+            </div>                     
+            <div class="cartP-bottom">
+              <div class="price">
+                <b>75₽/шт</b> <span>За 70₽.</span>
+                <a href="./basket.html" class="to-cart">В корзину</a>
+              </div>              
+            </div>                       
+          </div>
+          <div class="product">
+            <div class="cartP-top">
+              <a href="card.html">
+                <div class="img">
+                  <img src="img/mcsss8.jpg" alt="">
+                </div>
+                <a href="./card.html" class="title">СЛИВКИ СГУЩЕННЫЕ С САХАРОМ</a>
+                <p class="description"></p>
+              </a>
+            </div>                     
+            <div class="cartP-bottom">
+              <div class="price">
+                <b>131₽/шт</b> <span>За 129₽.</span>
+                <a href="./basket.html" class="to-cart">В корзину</a>
+              </div>              
+            </div>                       
+          </div>
+        </div>
+        <div class="pagination-block">
+          <nav aria-label="Page navigation example">
+            <ul class="pagination">
+              <li class="page-item active"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item"><a class="page-link" href="#">4</a></li>
+              <li class="page-item"><a class="page-link" href="#">•••</a></li>
+              <li class="page-item"><a class="page-link" href="#">8</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">
+                  <img src="img/chevron-top.svg" alt="next">
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </section>
+    <section class="delivery">
+      <div class="container">
+        <div class="block">
+          <h4 class="title">Доставка по области от 1999 RUB!</h4>
+          <a href="./page.html">Оформить</a>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="footer-wrapper">
+          <div class="footer-left">
+            <div class="phones">
+              <div class="phone-item">
+                <span>Бесплатный звонок по РФ</span>
+                <a href="tel:+7832826000">+7 (831) 282-60-00</a>
+              </div>
+              <div class="phone-item">
+                <span>Для приёма заказов</span>
+                <a href="tel:+79040664685">+7 (904) 066-46-85</a>
+              </div>
+            </div>
+            <div class="work-time">
+              График работы по будням с 9:00 до 18:00
+            </div>
+            <div class="work-email">
+              <a href="mailto: info@.ru">Email: info@.ru</a>
+              <a href="" class="site-help">Поддержка</a>
+            </div>
+          </div>
+          <div class="footer-center">
+            <div class="social">
+              <a href="">Мы в контакте ></a>
+              <a href="">Мы в instagram ></a>
+            </div>
+          </div>
+          <div class="footer-right">
+            <div class="person">
+              <a href=""><img src="img/footerperson.svg" alt=""> <span>Войти / Регистрация</span></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer_bottom">
+          <span>©2021. Нижнекисляйская молочная фабрика</span>
+          <a href="">Условия исоглашения</a>
+          <a href="">Политика кофиденциальности</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
+  </script>
+  <script>
+    const mySwiper = new Swiper('.swiper-container', {
+      slidesPerView: 1,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
+    const menuSwiper = new Swiper('.swiper-container-menu', {
+      slidesPerView: 'auto',
+      spaceBetween: 63,
+      freeMode: true,
+
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
+  <script src="js/js.js"></script>
+</body>
+
+</html>
+
+<!-- Modal -->
+<div class="modal fade" id="login" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      <div class="modal-body">
+        <div class="top-modal">
+          <img src="img/loginssv.svg" alt="">
+          <div class="modal-name">Войти в личный кабинет</div>
+        </div>
+        <div class="form">
+          <form action="" method="post">
+            <div class="inpb">
+              <input class="phone" name="" type="text" placeholder="Телефон">
+            </div>
+            <div class="inpb">
+              <input class="pass" name="" type="text" placeholder="Пароль">
+            </div>
+            <div class="forgot_pass">Забыли пароль?</div>
+            <button><a href="profile.html">Войти</a></button>
+          </form>
+          <div class="modal-txt">Впервые у нас <span class="span_register" data-bs-toggle="modal" data-bs-target="#register">Зарегистрироваться</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal register -->
+<div class="modal fade" id="register" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      <div class="modal-body">
+        <div class="top-modal">
+          <img src="img/loginssv.svg" alt="">
+          <div class="modal-name">Регистрация</div>
+        </div>
+        <div class="form">
+          <form action="" method="post">
+            <div class="inpb">
+              <input class="phone" name="" type="text" placeholder="Телефон">
+            </div>
+            <div class="inpb">
+              <input class="pass" name="" type="text" placeholder="Пароль">
+            </div>
+            <div class="inpb">
+              <input class="pass_repit" name="" type="text" placeholder="Подтвердите пароль">
+            </div>
+            <div class="line">
+              <input type="checkbox" id="r-mail">
+              <label for="r-mail">Принимаю условия <span>Пользовательского соглашения, Политики конфиденциальности</span></label>
+            </div>
+            <button><a href="profile.html">Зарегистрироваться</a></button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
